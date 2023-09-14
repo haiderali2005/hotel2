@@ -1,0 +1,405 @@
+/* .game1{
+  padding-top: 6em;
+} */
+
+.card-overlay{
+  position: absolute;
+  background-color:  rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease;
+  
+}
+.card:hover .card-overlay{
+  opacity: 1;
+}
+.card-name {
+  color: white; 
+  margin: 0; 
+  font-size: large;
+  font-weight: 100;
+}
+
+.team1{
+  border-radius: 0px;
+}
+.team{
+  border-radius: 20px;
+}
+.team:hover{
+  transform: scale(1.1);
+  overflow: hidden;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.share{
+  font-weight:bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.underline{
+  text-decoration: underline 10px;
+}
+.forlook {
+  transition: all 0.4s ease-in-out;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+/* chose */
+
+.chose {
+  padding: 60px 0 30px 0;
+  background: black;
+}
+.chose .titlepage h2 {
+  color: #fff;
+  font-weight: bolder;
+  font-size:3em;
+}
+.underline{
+  text-decoration: underline 10px;
+}
+.chose_box {
+  margin-bottom: 30px;
+}
+
+.chose_box h3 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.chose_box strong {
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  padding-bottom: 30px;
+}
+
+/** end chose **/
+
+
+.city1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.6s, background-color 0.3s;
+  cursor: pointer;
+}
+
+.city1 a {
+  background-color: red;
+  color: #fff;
+   border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+.text-white:hover .city1 {
+  opacity: 1;
+}
+
+.text-white:hover .city1 a {
+  display: block;
+}
+
+.image-container:hover .forlook {
+  transform: scale(0.9);
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.hero8{
+  height: 100vh;
+  width: 100%;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.677),rgba(0, 0, 0, 0.677)) , url('italian-food-ingredients_23-2148551669.avif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.forlook:hover{
+  transform: scale(0.9);
+  transition:  all 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.game2{
+border-radius: 20px;
+margin-top: 30px;
+margin-bottom: 30px;
+cursor: pointer;
+}
+.game2:hover{
+  transform: scale(1.1);
+  transition: all 1s;
+}
+.hero{
+  height: 100vh;
+  width: 100%;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.677),rgba(0, 0, 0, 0.677)), url('1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+nav.ok{
+  background-color: rgb(0, 0, 0);
+  transition: all 0.5s;
+}
+nav.stick{
+  transition: all 0.5s;
+}
+
+
+/* Define the default text style */
+.underline-hover {
+  text-decoration: none;
+  position: relative;
+}
+
+/* Create the underline that appears on hover */
+.underline-hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: pink; /* Change this to the desired underline color */
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom center;
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Expand the underline on hover */
+.underline-hover:hover::before {
+  transform: scaleX(1);
+}
+
+
+
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.swiper{
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EFEFEF;
+}
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card{
+  border-radius: 25px;
+  background-color: #FFF;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.views{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  border-radius: 25px 25px 0 25px;
+}
+.views::before,
+.views::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color:black;
+}
+.views::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.button{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: black;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover{
+  background: black;
+}
+
+.swiper-navBtn{
+  color: black;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: black;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: black;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+main section.hero2{
+  height: 100vh;
+  width: 100%;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.677),rgba(0, 0, 0, 0.677)), url('./bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.game3{
+  cursor: pointer;
+}
+.game3:hover{
+  transform: scale(1.1);
+  transition: all 1s;
+}
+.hero3{
+  height: 100vh;
+  width: 100%;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.677),rgba(0, 0, 0, 0.677)), url('reserv.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero4{
+  height: 100vh;
+  width: 100%;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.677),rgba(0, 0, 0, 0.677)), url('cus.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero5{
+  height: 100vh;
+  width: 100%;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.677),rgba(0, 0, 0, 0.677)), url('about.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero6{
+  height: 100vh;
+  width: 100%;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.677),rgba(0, 0, 0, 0.677)), url('menu.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero7{
+  height: 50vh;
+  width: 100%;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.677),rgba(0, 0, 0, 0.677)), url('lunch.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero7b{
+  height: 50vh;
+  width: 100%;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.677),rgba(0, 0, 0, 0.677)), url('lunch.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
